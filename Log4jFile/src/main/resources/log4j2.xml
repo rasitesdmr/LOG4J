@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <File name="file" fileName="C:\Users\******\Desktop\LogDosyası.log">
+            <PatternLayout pattern = "%d{ISO8601} %-5level (%F%L)-%msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root  level="INFO">
+            <AppenderRef ref="file"></AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>

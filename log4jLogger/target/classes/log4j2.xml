@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <!-- Console pattern -->
+    <Appenders>
+        <Console name ="Console" target = "SYSTEM.OUT">
+            <PatternLayout pattern = "%d{ISO8601} {%t} %-5level %logger{%36} - (%F : %L)-%msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name = "Proje" level="WARN" additivity="false">
+            <AppenderRef ref = "Console" />
+        </Logger>
+        <Logger name ="Proje.Logger" level="FATAL" additivity="false">
+            <AppenderRef ref = "Console" />
+        </Logger>
+    </Loggers>
+</Configuration>
